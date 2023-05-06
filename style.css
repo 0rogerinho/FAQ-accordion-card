@@ -1,0 +1,138 @@
+body {
+  max-width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 15%;
+  font-family: "Poppins";
+}
+main {
+  position: relative;
+  display: flex;
+  width: 920px;
+  height: 509px;
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+}
+.box_img {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+}
+.obj1 {
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin-left: -20%;
+}
+.obj2 {
+  position: absolute;
+  z-index: 9999999;
+  margin-left: -11%;
+  margin-top: 22%;
+}
+.obj3 {
+  object-fit: contain;
+  width: 200%;
+  height: 210%;
+  margin-left: -200%;
+  margin-top: -80%;
+}
+.illustration_woman_mobile {
+  display: none;
+}
+.bg_pattern_mobile {
+  display: none;
+}
+.box_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  height: max;
+}
+.box_conteudo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.box_conteudo h2 {
+  cursor: pointer;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  line-height: 17px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4b4c5f;
+}
+.box_conteudo h2:hover {
+  color: #f47b56 !important;
+}
+
+.box_conteudo p {
+  display: none;
+  font-family: "Kumbh Sans";
+  font-size: 0.75rem;
+  color: #787887;
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    justify-content: end;
+    align-items: center;
+  }
+  .box_conteudo {
+    width: 85%;
+    max-height: 643px;
+    margin-top: 5%;
+  }
+  .box_conteudo h1 {
+    text-align: center;
+  }
+  .box_img {
+    height: 100px;
+  }
+  .obj1 {
+    display: none;
+  }
+  .obj2 {
+    display: none;
+  }
+  .obj3 {
+    display: none;
+  }
+  .illustration_woman_mobile {
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    object-fit: contain;
+    top: -43%;
+  }
+  .bg_pattern_mobile {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
